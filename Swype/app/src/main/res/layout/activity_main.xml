@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".lockscreen.LockScreenActivity">
+
+    <com.wenchao.cardstack.CardStack
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding = "20dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_dislike_left"
+        android:id="@+id/red_disikeL"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/greenlikeright"
+        android:id="@+id/green_likeR"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_red_arrow"
+        android:src="@drawable/left_red_arr"
+        android:paddingTop="50dp"
+        android:paddingRight="5dp"
+        android:background="@null"
+        android:layout_below="@+id/image_ph"
+        android:layout_toLeftOf="@+id/image_ph"
+        android:layout_toStartOf="@+id/image_ph" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_green_arrow"
+        android:src="@drawable/right_green_arr"
+        android:paddingRight="50dp"
+        android:paddingBottom="45dp"
+        android:layout_above="@+id/image_ph"
+        android:layout_alignLeft="@+id/image_ph"
+        android:layout_alignStart="@+id/image_ph"
+        android:background="@null" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_ph"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null" />
+        <!--android:src="@drawable/image_sample"-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Like? Swipe right"
+        android:id="@+id/like_textDescription"
+        android:textColor="#00B050"
+        android:textSize="8pt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dislike? Swipe left"
+        android:id="@+id/dislike_textDescription"
+        android:textColor="#C00000"
+        android:textSize="8pt"
+        android:layout_below="@+id/like_textDescription"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

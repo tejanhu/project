@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SecureSwipe</string>
+    <string name="securitytxt">Security</string>
+    <string name="gallerytxt">Gallery</string>
+    <string name="notificationstxt">Notifications</string>
+    <string name="advancedsettingstxt">Advanced Settings</string>
+    <string name="themestxt">Themes</string>
+    <string name="intruderstxt">Intruders</string>
+    <string name="select_images">Select Images</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="mi">More Information</string>
+    <string name="title_security">Security</string>
+    <string name="disable_enableSwipe">  Disable Swipe Method</string>
+</resources>

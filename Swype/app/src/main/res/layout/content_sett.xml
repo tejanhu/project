@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetop"
+
+        android:layout_gravity="top"
+        android:background="@drawable/bbar"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swypeicon"
+        android:src="@drawable/logo6"
+        android:background="@null"
+        android:paddingLeft="40px"
+        android:layout_below="@+id/bluetop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsicon"
+            android:src="@drawable/settings_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Settings"
+            android:layout_marginLeft="8dp"
+            android:textSize="12pt"
+            android:id="@+id/settings_txt"
+            android:textColor="#a6a6a6"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/security_btn"
+            android:background="@null"
+            android:src="@drawable/security_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/securitytxt"
+            android:id="@+id/security_txt"
+            android:textSize="10pt"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/gallery_btn"
+            android:id="@+id/gallerybtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/gallerytxt"
+            android:id="@+id/galley_txt"
+            android:textSize="10pt"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"/>
+        <!--android:text="Gallery"-->
+        <!--android:id="@+id/txt_gallery" -->
+
+
+
+
+
+</LinearLayout>
+
+
+<LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   android:layout_marginTop="15dp"
+   android:layout_marginLeft="40dp"
+   android:layout_marginRight="20dp"
+   android:layout_marginBottom="15dp"
+   android:gravity="left|center_vertical"
+   android:paddingLeft="10dp">
+
+   <ImageButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/notifications_btn"
+       android:background="@null"
+       android:src="@drawable/notifications_icon" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:text="@string/notificationstxt"
+       android:id="@+id/notifications_txt"
+       android:textSize="10pt"
+       android:layout_marginLeft="52dp"
+       android:textColor="#000000" />
+
+
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+<LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   android:layout_marginTop="7dp"
+   android:gravity="left|center_vertical"
+   android:paddingLeft="10dp">
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/advancedsettingstxt"
+       android:textAllCaps="false"
+       android:id="@+id/advancedsettings_txt"
+       android:background="@null"
+       android:textColor="#AFABAB"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:textSize="12pt"
+    />
+
+
+
+
+
+</LinearLayout>
+
+
+<LinearLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:background="#ffffff"
+   android:layout_margin="10dp">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="20dp"
+       android:gravity="left|center_vertical"
+       android:paddingLeft="10dp">
+
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/themes_btn"
+          android:src="@drawable/themes_icon"
+           android:background="@null"
+          />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="Themes"
+           android:id="@+id/themes_txt"
+           android:textSize="10pt"
+           android:layout_marginLeft="52dp"
+           android:textColor="#000000" />
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="15dp"
+       android:gravity="left|center_vertical"
+       android:paddingLeft="10dp">
+
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/intruders_btn"
+           android:src="@drawable/intruders_icon2"
+           android:background="@null"
+          />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="Intruders"
+           android:id="@+id/intruders_txt"
+           android:textSize="10pt"
+           android:layout_marginLeft="50dp"
+           android:textColor="#000000" />
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

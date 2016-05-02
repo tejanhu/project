@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".lockscreen.LockScreenActivity">
+
+    <com.wenchao.cardstack.CardStack
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding = "20dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/like_green"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/green_like"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="50px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dislike_red"
+        android:src="@drawable/red_dislike"
+        android:paddingTop="40px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/green_arrow_up"
+        android:paddingLeft="40px"
+        android:paddingTop="20px"
+        android:src="@drawable/green_arr"
+        android:layout_alignBottom="@+id/image_ph"
+        android:layout_toLeftOf="@+id/dislike_textDescription"
+        android:layout_toStartOf="@+id/dislike_textDescription"
+        android:paddingRight="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_ph"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null" />
+    <!--android:src="@drawable/image_sample"-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:id="@+id/relativeLayout6"
+        android:paddingRight="23dp"
+        android:layout_above="@+id/dislike_red"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/image_ph"
+        android:layout_toEndOf="@+id/image_ph"
+        android:layout_alignTop="@+id/image_ph">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/red_arrow_down"
+            android:src="@drawable/red_arr"
+            android:paddingTop="2dp"
+            android:paddingLeft="50px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dislike? Swipe down"
+        android:id="@+id/dislike_textDescription"
+        android:textColor="#C00000"
+        android:textSize="8pt"
+        android:layout_below="@+id/like_green"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Like? Swipe up"
+        android:id="@+id/like_textDescription"
+        android:textColor="#00B050"
+        android:textSize="8pt"
+        android:layout_above="@+id/dislike_textDescription"
+        android:layout_alignLeft="@+id/dislike_textDescription"
+        android:layout_alignStart="@+id/dislike_textDescription" />
+
+</RelativeLayout>
